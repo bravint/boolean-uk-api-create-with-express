@@ -37,8 +37,8 @@ app.listen(port, () => {
       console.error("[ERROR] Connection error: ", error.stack);
     } else {
       console.log("\n[DB] Connected...\n");
-      //Pet().init();
-      //Book().init();
+      Pet().init();
+      Book().init();
     }
   });
 
