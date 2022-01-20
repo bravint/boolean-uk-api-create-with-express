@@ -51,7 +51,7 @@ function Book() {
     const getBookById = (id) => {
         const getOneById = `
             SELECT *
-            FROM users
+            FROM books
             WHERE id = $1;
           `;
 
@@ -64,7 +64,7 @@ function Book() {
     const getAllBooks = () => {
         const getAll = `
             SELECT *
-            FROM users;
+            FROM books;
             `;
 
         return db
